@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Varchhu</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			<div class="message">
+				<p class="greeting">Hey Abi Ma ❣️❣️,</p>
+				<p class="intro">
+					Mera pyaar. U know This is Venkat from ur contact 
+					<span class="comments">// (Bestuu)</span>.
+				</p>
+				<p class="content">
+					Like un kitta perusa ethuvum ethir pakala, but Nee venum tha nenacha.  
+					<span class="comments">// Reminds me of all our love scenes and fights.</span>  
+					I remembered our fights and my possessive moments. Enna tha nee enna love panna maten nu sonnalum...  
+					<span class="comments">// Athuvum ennaku pudichi irukku.</span>
+				</p>
+				<p class="dreams">
+					Unkooda life long irukanum nu aasa, but nee ok soldra varaikum athu imagination tha.  
+					Nee yes sonnalum no sonnalum  
+					<span class="actions">// Naa un pinadi tha varuven, flirt pannuven, sight adipen.</span>  
+					Romance varutho illaiyo pannuven.
+				</p>
+				<p class="admiration">
+					And I'm already told nee enna purinja girl next to my mom, neetha nu.  
+					<span class="comments">// True story.</span>
+				</p>
+				<p class="support">
+					And one more thing, any help you want from me, just ask in any way, and I’ll be here... always.  
+				</p>
+				<p class="ending">
+					Neraiya irukku but papom.  
+					<span class="comments">// Un kanna pathute irukkanum pola irukku di...</span>  
+					Something in it 😁  
+				</p>
+				<p class="love">
+					<strong>I love you 😍</strong>  
+				</p>
+			</div>			
+			<br>
+			<br>
+			All I want to say is:<br />
+			Abi ma, I will love you forever as a friend;<br />
+			<br>
+			<br>
+			Now If you want to talk with me you can touch the heart below<br />
+			<br>
+			<span id="heartspan">
+				<a href="tel:9442879062">
+					<i class="fas fa-heart" id="icon"></i>
+				</a>
+			</span>
+			
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					LOVE YOU FOREVER
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- VENKAT</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 0, 22);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
